@@ -20,7 +20,10 @@
 </head>
 <body>
 
-<h1>Event Manager</h1>
+<div class="banner">
+	<h1>Event Manager</h1>
+	<p>Manage your events with ease</p>
+</div>
 
 <div class = "content-wrapper">
 <div class = "events">
@@ -48,9 +51,9 @@ if($result->num_rows > 0){
 	while($row = $result->fetch_assoc()){?>
 	<div class="records">
 
-		<?php echo "Name: ".$row["name"]."<br> Genre: ".$row["genre"]."<br> Venue: ".$row["venue"]."<br> Date: ".$row["date"]."<br> Summary: ".$row["summary"]."<br>";
+		<h3><?php echo $row["name"]?></h3><?php echo "Genre: ".$row["genre"]."<br> Venue: ".$row["venue"]."<br> Date: ".$row["date"]."<br> Summary: ".$row["summary"]."<br>";
 
-?> 
+?>
 		<form action="registerControl.php" method="POST">
 		<input type="hidden" name="name"
 		 value="<?php echo $row["name"]; ?>" >
@@ -59,7 +62,7 @@ if($result->num_rows > 0){
 		</div>
 <?php
 
-	} 
+	}
 }
 
 else{
@@ -104,13 +107,13 @@ if($result->num_rows > 0){
 
 	?>
 
-<form action = "unsubscribe.php" method = "POST"> 
-<input type="hidden" name = "name" value = "<?php echo $row["name"]; ?>">      
+<form action = "unsubscribe.php" method = "POST">
+<input type="hidden" name = "name" value = "<?php echo $row["name"]; ?>">
 <button type="submit" id = "trash" <i class="fa fa-trash" aria-hidden="true"></i></button>
 </form>
 </div>
 
-<?php 
+<?php
 	}
  }
 ?>
@@ -125,4 +128,3 @@ if($result->num_rows > 0){
 
 </body>
 </html>
-

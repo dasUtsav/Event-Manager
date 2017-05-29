@@ -4,22 +4,41 @@
 }
 
 body{
-    background-color: #F7F1E3;
-    font-family: 'Raleway', sans-serif;
-}
-
-h1{
-    width: 100%;
-    text-align: center;
-    background-color: #015289;
-    color: #FFFFFF;
-    margin-bottom: 20px;
-    padding: 15px 0;
+    background-color: #fff;
     font-family: 'Raleway', sans-serif;
 }
 
 h2{
     text-align: center;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+h3{
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.banner{
+  display: block;
+  width: 100%;
+  background-color: #015289;
+  height: 200px;
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1{
+  color: white;
+  font-size: 2.8em;
+  margin: 25px 0;
+}
+
+p{
+  color: white;
+  font-size: 1.4em;
 }
 
 .content-wrapper{
@@ -30,11 +49,12 @@ h2{
 }
 
 .registered{
-    background-color: #AED8F2;
-    color: #D51045;
+    background-color: #fff;
+    color: #015289;
     height: 300px;
     width: 300px;
     border-radius: 5px;
+    border: 1px solid lightgrey;
 }
 
 .welcome{
@@ -56,17 +76,17 @@ h2{
 #trash{
     font-size: 1.2em;
     cursor: pointer;
-    color: #D51045;
+    color: #015289;
     padding: 0;
-    background-color: #AED8F2;
+    background-color: #fff;
     margin: 0;
 }
 
 button{
     cursor: pointer;
     padding: 5px 20px;
-    background-color: #FFFFFF;
-    color: #015289;
+    background-color: #015289;
+    color: #fff;
     border-style: none;
     font-size: 1.1em;
     margin-top: 10px;
@@ -76,11 +96,12 @@ button{
 }
 
 .records{
-    background-color: #015289;
+    background-color: #fff;
     margin-bottom: 30px;
     padding: 15px;
     font-size: 1.5em;
-    color: #FFFFFF;
+    color: #015289;
+    border: 1px solid lightgrey;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
@@ -96,7 +117,7 @@ button{
 }
 
 .unsubscribe{
-    width: 30%;
+    width: 35%;
     margin: auto;
     padding: 10px;
     font-size: 1.2em;
@@ -105,5 +126,3 @@ button{
     justify-content: space-around;
     flex-direction: row;
 }
-
-

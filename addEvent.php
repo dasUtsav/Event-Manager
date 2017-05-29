@@ -11,15 +11,15 @@
 </head>
 <body>
 
-	<form action="addEventControl.php" method="POST" name="registration">
+	<h1>Add Event</h1><br>
 
-		<h1>Add Event</h1><br>
+	<form action="addEventControl.php" method="POST" name="registration">
 
 		<div class = "box">
 
 		<div class="name">
 
-		<label for="name">Enter the name</label><br>		
+		<label for="name">Enter the name</label><br>
 		<input type="text" name="name"><br><br>
 		<button id="name">Next</button><br><br>
 
@@ -49,14 +49,13 @@
 
 		</div>
 
-		<div class="summary">
-
+	<div class="summary">
 		<label>Please provide a summary to boot as well</label><br><br>
-		<textarea name="summary" cols="80" rows="5" maxlength="250"></textarea><br><br>
+		<textarea name ="summary"maxlength="250"></textarea><br><br>
+	</div>
 
-		</div>
 
-		
+
 		<div class="submit"><button type="submit">Confirm</button></div>
 
 		<div class = "box">

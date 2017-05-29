@@ -45,7 +45,7 @@
 
 	<a href="login.php">Already signed in?</a>
 
-	</div>	
+	</div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
 	<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.js"></script>
