@@ -22,7 +22,3 @@ $(document).ready(function(){
         $(".submit").slideDown();
     });
 });
-
-$('html, body').animate({
-      scrollTop: $('.venue').offset().top
-  }, 3000);
