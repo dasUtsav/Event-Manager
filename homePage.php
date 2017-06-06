@@ -51,9 +51,9 @@ if($result->num_rows > 0){
 	while($row = $result->fetch_assoc()){?>
 	<div class="records">
 
-		<h3><?php echo $row["name"]?></h3><?php echo "Genre: ".$row["genre"]."<br> Venue: ".$row["venue"]."<br> Date: ".$row["date"]."<br> Summary: ".$row["summary"]."<br>";
+		<h3><?php echo $row["name"]?></h3> <h6>Genre: </h6>	<?php echo $row["genre"]?><br><h6>Venue: </h6><?php echo " ".$row["venue"]?><br> <h6>Date: </h6><?php echo " ".$row["date"]?><br>
+		<h6>Summary: </h6><?php echo " ".$row["summary"]?><br>
 
-?>
 		<form action="registerControl.php" method="POST">
 		<input type="hidden" name="name"
 		 value="<?php echo $row["name"]; ?>" >
@@ -120,11 +120,6 @@ if($result->num_rows > 0){
 </div>
 
 </div>
-
-<!-- jQuery first, then Tether, then Bootstrap JS. -->
-<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
 </body>
 </html>
