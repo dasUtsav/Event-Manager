@@ -52,6 +52,5 @@
 	<script src="http://ajax.microsoft.com/ajax/jquery.validate/1.11.1/additional-methods.js"></script>
 	<script src="form-validation.js"></script>
 
-
 </body>
 </html>
